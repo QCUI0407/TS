@@ -15,3 +15,7 @@ createUser(newUser);
 function creatCourse() {
     return { name: "vscode", price: 100 };
 }
+function createUserOne(user) {
+    return { name: "", email: "", isActive: true };
+}
+createUserOne({ name: "", email: "", isActive: true });

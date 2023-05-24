@@ -17,4 +17,17 @@ function creatCourse():{name: string, price: number}{
     return {name:"vscode", price: 100}
 }
 
+//------------
+type User ={
+    name: string;
+    email: string;
+    isActive: boolean
+}
+
+function createUserOne(user: User):User{
+    return{name:"",email:"", isActive:true}
+}
+
+createUserOne({name:"",email:"", isActive:true})
+
 export{}
