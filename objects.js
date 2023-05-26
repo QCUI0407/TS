@@ -19,3 +19,10 @@ function createUserOne(user) {
     return { name: "", email: "", isActive: true };
 }
 createUserOne({ name: "", email: "", isActive: true });
+var myUserE1 = {
+    _id: "1111",
+    name: "E1",
+    email: "E1@mail.com",
+    isActive: false
+};
+myUserE1.email = "change";

@@ -30,4 +30,36 @@ function createUserOne(user: User):User{
 
 createUserOne({name:"",email:"", isActive:true})
 
+
+type UserE1 = {
+    readonly _id: string
+    name: string
+    email: string
+    isActive: boolean
+    cardDetails?: number
+}
+let myUserE1: UserE1 = {
+    _id:"1111",
+    name:"E1",
+    email:"E1@mail.com",
+    isActive: false
+}
+
+type cardNumber = {
+    cardNo: string
+}
+
+type cardDate ={
+    cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number
+}
+
+
+myUserE1.email = "change"
+
+// function createUserE1(u: UserE1)
+
 export{}
